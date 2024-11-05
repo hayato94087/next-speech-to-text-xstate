@@ -53,8 +53,13 @@ export const voiceRecognitionMachine = setup({
     stream: null,
     mediaRecorder: null,
   },
-  initial: 'idle',
+  initial: 'waiting',
   states: {
+    waiting: {
+      on: {
+        START_RECORDING: 'initializing',
+      },
+    },
     idle: {
       on: {
         START_RECORDING: 'initializing',
