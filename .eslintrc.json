@@ -17,6 +17,6 @@
     "xstate/no-async-guard": "error",
     "xstate/event-names": ["warn", "macroCase"],
     "xstate/state-names": ["warn", "camelCase"],
-    "xstate/no-auto-forward": "warn",
+    "xstate/no-auto-forward": "warn"
   }
 }
